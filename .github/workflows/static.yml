@@ -40,12 +40,12 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: custom
-          source: "./dist"
+          source: "./build"
 
       - name: Upload static artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: "./build"
 
       - name: Deploy to GitHub Pages
         id: deployment
