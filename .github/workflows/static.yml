@@ -38,15 +38,11 @@ jobs:
 
       - name: Setup Pages with the build directory
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: custom
-          source: "./build"
 
       - name: Upload static artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./build"
-
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
