@@ -1,12 +1,12 @@
-import "./App.css";
-import BinaryRain from "./components/BinaryRain";
+import './App.css';
+import Home from './pages/Home';
 
 function App() {
-	return (
-		<div>
-			<BinaryRain />
-		</div>
-	);
+  return (
+    <main>
+      <Home />
+    </main>
+  );
 }
 
 export default App;
