@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   // Uncomment and adjust if deploying to a subdirectory
-  // base: '/binary',
+  base: '/binaryCanvasAnimation/',
   build: {
     outDir: 'dist', // Default output directory
   },
